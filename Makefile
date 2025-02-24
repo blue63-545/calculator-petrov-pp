@@ -45,4 +45,4 @@ build/gtest/gtest_main.o: $(GTEST_DIR)/src/*.cc $(GTEST_DIR)/src/*.h $(GTEST_HEA
 
 # Google Test static libraries
 build/gtest/gtest_main.a: build/gtest/gtest-all.o build/gtest/gtest_main.o
-	ar $(ARFLAGS) $@ $^ -o $@
+	ar rv $@ $^ -o $@
